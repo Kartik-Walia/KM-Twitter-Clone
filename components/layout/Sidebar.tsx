@@ -21,12 +21,14 @@ const Sidebar = () => {
         {
             label: 'Notifications',
             href: '/notifications',
-            icon: BsBellFill
+            icon: BsBellFill,
+            auth: true
         },
         {
             label: 'Profile',
             href: '/users/123',
-            icon: FaUser
+            icon: FaUser,
+            auth: true
         }
     ];
     return(
@@ -35,7 +37,13 @@ const Sidebar = () => {
                 <div className="space-y-2 lg:w-[230px]">
                     <SidebarLogo/>
                     {items.map((item) => (
-                        <SidebarItem key={item.href} href={item.href} label={item.label} icon={item.icon} />
+                        <SidebarItem 
+                            key={item.href} 
+                            href={item.href} 
+                            label={item.label} 
+                            icon={item.icon} 
+                            auth={item.auth}
+                        />
                     ))}
 
                     {/* Logout logo would be visible only when we would've the current user */}
