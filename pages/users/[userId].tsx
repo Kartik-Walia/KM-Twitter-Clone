@@ -31,7 +31,7 @@ const UserView = () => {
       <UserBio userId={userId as string} />
       <PostFeed userId={userId as string} />
     </>
-   );
+  );
 }
- 
+
 export default UserView;

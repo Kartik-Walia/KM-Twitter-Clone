@@ -27,7 +27,7 @@ const Sidebar = () => {
         },
         {
             label: 'Profile',
-            href: '/users/${currentUser?.id}',
+            href: `/users/${currentUser?.id}`,
             icon: FaUser,
             auth: true
         }
@@ -39,12 +39,12 @@ const Sidebar = () => {
                     <SidebarLogo/>
                     {items.map((item) => (
                         <SidebarItem 
-                            key={item.href} 
-                            href={item.href} 
-                            label={item.label} 
-                            icon={item.icon} 
-                            auth={item.auth}
+                            key={item.href}
                             alert={item.alert}
+                            auth={item.auth}
+                            href={item.href}
+                            icon={item.icon}
+                            label={item.label}
                         />
                     ))}
 
