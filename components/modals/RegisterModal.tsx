@@ -6,7 +6,7 @@ import { signIn } from "next-auth/react";
 import useLoginModal from "@/hooks/useLoginModal";
 import useRegisterModal from "@/hooks/useRegisterModal";
 
-import Input from "../input";   // We're using ../input bcoz it has to go outside the modals folder 
+import Input from "../Input";   // We're using ../input bcoz it has to go outside the modals folder 
 import Modal from "../Modal";
 
 const RegisterModal = () => {
