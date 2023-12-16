@@ -6,7 +6,7 @@ import useCurrentUser from "@/hooks/useCurrentUser";
 import useEditModal from "@/hooks/useEditModal";
 import useUser from "@/hooks/useUser";
 
-import Input from "../input";
+import Input from "../Input";
 import Modal from "../Modal";
 import ImageUpload from "../ImageUpload";
 
