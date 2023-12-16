@@ -41,6 +41,7 @@ const Form: React.FC<FormProps> = ({ placeholder, isComment, postId }) => {
       mutatePosts();
       mutatePost();
     } catch (error) {
+      console.error('Axios Error',error);
       toast.error('Something went wrong');
     } finally {
       setIsLoading(false);
